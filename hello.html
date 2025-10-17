@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello React (No Install)</title>
+
+  <!-- Load React & ReactDOM from the web (needs internet) -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+</head>
+<body>
+  <!-- Where React will show content -->
+  <div id="root"></div>
+
+  <!-- Tiny React app (no JSX, no extra tools) -->
+  <script>
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(
+      React.createElement(
+        "h1",
+        { style: { textAlign: "center", marginTop: "40px", fontFamily: "system-ui" } },
+        "Hello World from React 👋"
+      )
+    );
+  </script>
+</body>
+</html>
